@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="content-wrap">
+        <header id="head">
+            <h1>This is the background color flipper.</h1>
+        </header>
+        <div class="color-name-wrap">
+            <div class="text-wrap">
+                <h2>Background color : </h2>
+                <span class="color-name">#a2ca4e</span>
+            </div>
+            <button id="btn">Change color</button>
+        </div>
+    </div>
+</body>
+<script>
+    let colorArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+    let body = document.querySelector('body');
+    let colorName = document.querySelector('.color-name');
+    let btn = document.querySelector('#btn');
+
+    btn.addEventListener('click', function () {
+        let hex = "#";
+ 
+        for (i = 0; i < 6; i++) {
+            hex += colorArray[getRandomNumber()];
+        }
+
+        let color = body.style.backgroundColor = hex;
+        colorName.textContent = color;
+
+    });
+
+    function getRandomNumber(){
+        return Math.floor(Math.random()*colorArray.length);
+    }
+
+</script>
+</html>

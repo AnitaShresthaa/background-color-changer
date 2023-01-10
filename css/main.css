@@ -1,0 +1,41 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #a2ca4e;
+}
+
+.content-wrap {
+  text-align: center;
+  margin: 80px 0 0 0;
+}
+.content-wrap .color-name-wrap {
+  background-color: black;
+  color: white;
+  width: 40%;
+  margin: auto;
+  padding: 70px 0 50px 135px;
+  border-radius: 10px;
+}
+.content-wrap h1 {
+  margin: 0 0 50px 0;
+}
+.content-wrap .text-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.content-wrap span {
+  font-size: 25px;
+}
+.content-wrap #btn {
+  margin: 30px 90px 0 0;
+  padding: 20px;
+  border-radius: 10px;
+}
